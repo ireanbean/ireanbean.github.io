@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tech-y Thoughts</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body>
+  <div id="Navigation">
+    <table>
+      <tr>
+        <td><a href="#">Home</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">Blog</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">Projects</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">About Me</a></td>
+      </tr>
+    </table>
+  </div>
+  <div id="Page-Title">
+    <h1>Tech-y Thoughts</h1>
+  </div>
+
+<main>
+  <div id="Post-Content">
+  <h3>Arrays vs. Hashes</h3>
+  <h4></h4>
+  <h4>2014.02.01</h4>
+
+  <section>
+    <h5>Arrays</h5>
+    <p>
+      Arrays are used to store information, or in lay-man's terms, create lists of information. Each slot (ie. index) in the list is assigned a value, which could be any type of object like a string, integer, float, another array, etc. These slots are basically variables that point to the value it holds.
+    </p>
+    <h5>Hashes</h5>
+    <p>
+      Hashes are also used to store information like arrays. However, the structure is not like that of a list as it is kind of a pot of floating information. Instead of using numbers/indexes to refer to a certain slot that gives it an order, hashes can use any object to refer to a lost. These objects are called keys. Each key is then assigned a value.    </p>
+    <h5>Examples</h5>
+    <p>
+      This is the usual structure for an array and the method each: <br>
+      <div style="padding-left: 2em;">
+        my_array[0] = 'Curry'<br>
+        my_array[1] = 'Thompson'<br>
+        my_array[2] = 'Green'<br>
+        my_array[3] = 'Lee'<br>
+        my_array[4] = 'Bogut'<br>
+        <br>
+        my_array.each do |player|<br>
+          puts player<br>
+        end<br>
+      </div><br>
+      This is the usual structure for hashes and the method each: <br>
+      <div style="padding-left: 2em;">
+        my_hash['point-guard'] = 'Curry'<br>
+        my_hash['shooting-guard'] = 'Thompson'<br>
+        my_hash['small forward'] = 'Green'<br>
+        my_hash['power forward'] = 'Lee'<br>
+        my_hash['center'] = 'Bogut'<br>
+        <br>
+        my_hash.each do |position, player| <br>
+          puts "#{position}: #{player}"<br>
+        end
+      </div>
+    </p>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</div>
+<div id="Dates">
+    <table>
+      <tr>
+        <td><a href="#">Jan 18, 2014</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">Jan 25, 2014</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">Feb 1, 2014</a></td>
+      </tr>
+    </table>
+  </div>
+</main>
+<div>
+  <a href="#">Previous</a><!--Figure out how to make relative to other posts-->
+</div>
+<div>
+  <a href="#">Next</a><!--Figure out how to make relative to other posts-->
+</div>
+</body>
+</html>
