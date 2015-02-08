@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tech-y Thoughts</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body>
+  <div id="Navigation">
+    <table>
+      <tr>
+        <td><a href="#">Home</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">Blog</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">Projects</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">About Me</a></td>
+      </tr>
+    </table>
+  </div>
+  <div id="Page-Title">
+    <h1>Tech-y Thoughts</h1>
+  </div>
+
+<main>
+  <div id="Post-Content">
+  <h3>Enumerable methods</h3>
+  <h4></h4>
+  <h4>2014.02.08</h4>
+
+  <section>
+    <h5>Enumerable#group_by</h5>
+    <p>
+      Group_by is a method used for enumerables when you want to create a hash that groups elements from the enumerable in arrays. The syntax is as such:<br>
+      <div style="padding-left: 2em;">group_by {|obj| block}</div><br>
+      The method will take the elements of the enumerable, evaluate each one with the block, and give the outputed result as an array. In the resulting hash, the keys are the result from the block and the values are the arrays that are the evaluated result that correspond to each key.
+    </p>
+    <h5>Examples</h5>
+    <p>
+      Use Enumerable#group_by when you want to pull specific groups of element from an array or hash. Specify that requirement in the block to pass each element through. Here is a good example taken from <a href="http://ruby-doc.org/core-2.0.0/Enumerable.html#method-i-group_by">Ruby Docs</a>:<br>
+      <div style="padding-left: 2em">(1..6).group_by { |i| i%3 }   #=> {0=>[3, 6], 1=>[1, 4], 2=>[2, 5]}</div><br>
+    </p>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</div>
+<div id="Dates">
+    <table>
+      <tr>
+        <td><a href="#">Jan 18, 2014</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">Jan 25, 2014</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">Feb 1, 2014</a></td>
+      </tr>
+    </table>
+  </div>
+</main>
+<div>
+  <a href="#">Previous</a><!--Figure out how to make relative to other posts-->
+</div>
+<div>
+  <a href="#">Next</a><!--Figure out how to make relative to other posts-->
+</div>
+</body>
+</html>
