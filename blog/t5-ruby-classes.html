@@ -36,14 +36,27 @@
   <section>
     <h5></h5>
     <p>
-      Group_by is a method used for enumerables when you want to create a hash that groups elements from the enumerable in arrays. The syntax is as such:<br>
-      <div style="padding-left: 2em;">group_by {|obj| block}</div><br>
-      The method will take the elements of the enumerable, evaluate each one with the block, and give the outputed result as an array. In the resulting hash, the keys are the result from the block and the values are the arrays that are the evaluated result that correspond to each key.
+      It's a new year, so with a new year comes resolutions and a spike in gym attendance for the first couple of months. Let's say that you want to know how many weeks it would take to achieve your healthy pinnacle at a certain goal weight. In Ruby, it would save lines of code to create a class called Diet and create Diet#methods that would calculate all of that for you without having to write out the code each time. Take a look below.
     </p>
-    <h5>Examples</h5>
+
+    <p><div style="padding-left: 2em; background-color: grey; font-color: white">
+      class Diet
+        attr_accessor :current_weight, :goal_weight, :pounds_lost_per_week
+
+        def initialize(current_weight, goal_weight)
+          raise ArgumentError.new ("Current and goal weight must be integers.") unless current_weight.is_a? Integer && goal_weight.is_a? Integer
+          p "Your current weight is #{@current_weight}."
+          p "Your goal weight is #{@goal_weight}."
+        end
+
+        def weeks_to_goal(pounds_lost_per_week)
+          p (@goal_weight - @current_weight)/@pounds_lost_per_week
+        end
+      end
+    </div>
+    </p>
     <p>
-      Use Enumerable#group_by when you want to pull specific groups of element from an array or hash. Specify that requirement in the block to pass each element through. Here is a good example taken from <a href="http://ruby-doc.org/core-2.0.0/Enumerable.html#method-i-group_by">Ruby Docs</a>:<br>
-      <div style="padding-left: 2em">(1..6).group_by { |i| i%3 }   #=> {0=>[3, 6], 1=>[1, 4], 2=>[2, 5]}</div><br>
+      In this simple example of a class, the instance variables used are current_weight, goal_weight, and pounds_lost_per_week. To initialize the class, you must enter your current weight and goal weight as attributes. The method Diet#weeks_to_goal will take those attributes and the parameter pounds_lost_per_week to calculate how manu weeks it would take to reach your goal. If you don't initialize a new class with integer digits, it will raise an ArgumentError.
     </p>
 
       <!-- copy and paste as many sections as you want to add paragraphs -->
