@@ -1,0 +1,15 @@
+h3 {
+ color: blue;
+}
+
+div {
+  border: 1px solid black;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 5px;
+}
+
+pre {
+  background-color: #b2b2b2;
+  padding: 10px;
+}

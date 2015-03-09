@@ -1,0 +1,49 @@
+<html>
+<head>
+  <title>Ruby Hashes, Arrays, Strings, and Integers</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="cheat-stylesheet.css">
+</head>
+<body>
+    <h1>Ruby Hashes, Arrays, Strings, and Integers: a Cheat Sheet</h1>
+    <div>
+        <h3>Hashes</h3>
+        <p>A Hash is a collection of unique keys and their values. Hashes enumerate their values in the order that the corresponding keys were inserted.<br>
+  This is an example of a Hash:<br>
+  <pre>my_information = { "name" => "Grace",
+        "hometown" => "Worcester, MA"
+        "fav_color" => "blue",
+        "fav_flower" => "tulip"
+        "fav_food" => "tacos"
+      }</pre>
+  Because Hashes allow you to specify unique keys that are not integers (like an array), you can call on individual elements in your hash using those specific keys instead of the specific order of the data collection. If I wanted to share specific information about myself, I would store it in the Hash above and can call the specific information types or "keys" to share the values.<br>
+  </p>
+    </div>
+    <div>
+        <h3>Arrays</h3>
+        <p>Arrays are a class in Ruby. It stores lists of objects that are automatically assigned an index number starting the count from 0. It is a good way to store data in one object and takes any object (strings, integers, arrays, hashes) as its elements.<br>
+Notation examples:<br>
+<pre>my_array = [1,2,3,4,5]
+another_array = ['hello','this','is','an','array']
+array_in_array = [[1,2],[3,'hello'],[1,'world']]</pre>
+Arrays are excellent when you need to store elements in an order and don't need a specific key to refer to any element. It is useful to use arrays for large data sets that are listed out to manipulate the list by either adding new elements, accessing a certain number of them, etc. These mentioned methods are Array#push, Array#[index] and more.<br>
+</p>
+    </div><div>
+        <h3>Strings</h3>
+        <p>A string is a collection of letters and special characters and must always be surrounded by quotation marks.<br>
+        My name is an example of a String in Ruby and would look like this:<br>
+            <pre>"Grace"</pre>
+        When referencing anything besides numbers, strings must be used with the proper syntax.</p>
+    </div>
+    <div>
+        <h3>Integers</h3>
+        <p>Integers are a class of whole numbers that don't include decimals.<br>
+        Notation examples:<br>
+        <pre>930048
+4
+-1283 </pre>
+        There are special cases like when dividing two numbers that the output integer will be the rounded down answer if it doesn't divide evenly.<br>
+        </p>
+    </div>
+</body>
+</head>
